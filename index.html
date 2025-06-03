@@ -26,7 +26,6 @@
 Это мой проект разрабатываемый для выполнения задания по курсу "Введение в профессиональную деятельность 09.03.01"</br> 
 </div>
 </div> 
-  
 <p>Мои контакты:</p>
 <ul>
 <li>Email: <a href="mailto:vitya.317@yandex.ru" target="_blank">vitya.317@yandex.ru</a></li>
@@ -36,35 +35,6 @@
 <p>Проект с кодом, размещён на моём гитхабе - <a href="https://github.com/pe7rov" target="_blank">Открыть github</a></p>
 <p>Так же данный проект размещён на хостинге -  <a href="http://g91492ut.beget.tech/" target="_blank">Открыть сайт</a></p>
 </div>
- 
-<script>
-const visionButton = document.getElementById('vision-mode-toggle');
-
-visionButton.addEventListener('click', () => {
-  document.body.classList.toggle('vision-mode');
-  
-  const isActive = document.body.classList.contains('vision-mode');
-  
-  // Обновляем атрибуты и текст кнопки
-  visionButton.setAttribute('aria-pressed', isActive ? 'true' : 'false');
-  
-  if (isActive) {
-    visionButton.setAttribute('aria-label', 'Выключить режим для слабовидящих');
-    visionButton.textContent = 'Выключить режим для слабовидящих';
-    
-    // Можно дополнительно увеличить шрифт через inline стиль или оставить только класс
-    // например, если хотите более точное управление:
-    // document.body.style.fontSize = '1.5em';
-    
-} else {
-    visionButton.setAttribute('aria-label', 'Включить режим для слабовидящих');
-    visionButton.textContent = 'Включить режим для слабовидящих';
-    
-    // Восстановление стандартных настроек (если нужно)
-    // document.body.style.fontSize = '';
-}
-});
-</script>
-
+<script src="script.js"></script>
 </body>
 </html>
